@@ -230,6 +230,9 @@ include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
+# Temp
+SELINUX_IGNORE_NEVERALLOWS := true
+
 # Thermal
 USE_DEVICE_SPECIFIC_THERMAL := true
 
